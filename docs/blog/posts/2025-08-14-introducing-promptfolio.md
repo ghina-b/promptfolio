@@ -1,8 +1,6 @@
 ---
 title: Introducing Promptfolio
 date: 2025-08-14
-authors:
-  - Ghina
 tags:
   - meta
   - alignment
