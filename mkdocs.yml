@@ -1,5 +1,5 @@
 site_name: My Docs
-site_url: https://mydomain.org/mysite
+site_url: https://ghina-b.github.io/promptfolio/
 theme:
   name: material
   palette: 
@@ -9,7 +9,7 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
 
-    # Palette toggle for light mode
+    # Palette toggle for light mode 
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:

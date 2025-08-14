@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+---
+title: Promptfolio
+hide:
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# 👋 Hi, I’m Ghina
 
-## Commands
+Security-minded AI researcher focusing on **alignment, red teaming, and jailbreak analysis**. This site hosts short write-ups, experiments, and notes.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Quick links
 
-## Project layout
+[:material-notebook-outline: Blog](blog/index.md) • [:material-tag-multiple: Tags](../tags.md) • [:material-account: About](about.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Featured work
+
+::: cards
+- :material-shield-lock: **Defense-Aware Prompting **
+  + A practical recipe for stress-testing model guardrails with structured probes.
+  + [Read overview](blog/posts/2025-08-14-dap-starter-kit.md)
+
+- :material-flask-outline: **Jailbreak Strategy Map**
+  + Taxonomy + examples comparing strategy transfer across models.
+  + *Post coming soon*
+:::
+
+## What to expect
+
+- Concise posts with runnable snippets  
+- Real attack+defense tradeoffs  
+- Transparent failures and lessons
