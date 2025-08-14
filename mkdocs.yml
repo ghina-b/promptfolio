@@ -12,6 +12,7 @@ theme:
     # Palette toggle for light mode 
     - media: "(prefers-color-scheme: light)"
       scheme: default 
+      primary: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -19,6 +20,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep purple
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
