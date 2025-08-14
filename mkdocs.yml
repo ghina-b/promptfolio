@@ -44,8 +44,6 @@ plugins:
   - tags: 
       tags_file: tags.md
   - blog
-  - bibtex:
-      bib_file: "docs/refs.bib"
 
 markdown_extensions:
   - footnotes
