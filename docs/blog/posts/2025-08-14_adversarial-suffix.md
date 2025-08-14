@@ -5,28 +5,48 @@ category:
  - "AI Security Research"
 tags: 
   - "Adversarial Attack"
-  - HackAPrompt
-  - CBRNE
-readtime: 4
-pin: true  
+readtime: 2
+
 
 ---
 
+
 # Adversarial Suffix Attack 
 <!-- more -->
-Adversarial suffix attack is a type of adversarial attack that targets the suffix of a prompt. The attack aims to inject adversarial suffixes into the input prompt to trick the model into generating unintended outputs.
+An adversarial suffix attack is a type of adversarial attack that targets the suffix of a prompt. The attacker appends a malicious suffix to trick the model into generating unintended outputs.
 
 ## Attack Principle
 
-The attack principle of adversarial suffix attack is similar to that of adversarial prefix attack. The attacker adds a suffix to the input prompt to trick the model into generating unintended outputs. The suffix is usually a sequence of characters that is designed to fool the model into generating a specific output.
+The concept is similar to an adversarial prefix attack, but the manipulation is added at the end of the prompt. The suffix is typically a sequence of tokens crafted to steer the model toward a specific output.
 
-## How winners used this to their advantage ?
-research by [X]  show cases this. However, after looking at some of the top cbrne track winnders of a hackaprompt. Lets analyze a few of them. 
+## WhiteBox 
+Research by [Wallace et al.](https://arxiv.org/pdf/2307.15043) demonstrates this technique GCG.
+Gradient‑based optimization (GCG)
+Using Greedy Coordinate Gradient, attackers with full model access can calculate token-level gradients to optimize suffixes that maximize the chance of affirmative or harmful responses. This requires access to gradients and model internals.
+These suffixes can reliably circumvent content filters and guardrails baked into the model’s alignment logic.
 
-Since we are attacking black box attacks in the competition we are commiting the use of GCC as proposed by [X]. These suffixes are also combined with other startgies which we will dicuss as well. 
+## Black Box 
 
-## Bacterial Basics 
+Transferability of suffixes to black box models, it is not immporssoble alothough it is not widley used as before since it is extremy costly and tyimely. 
+However, befrhand , suffixes crafted for one model can still work on others, even closed systems like ChatGPT, Bard, Claude indicating shared vulnerabilities across models.
 
 
+## Real Life example
+
+A paper [here](https://repello.ai/blog/breaking-metas-prompt-guard-why-your-ai-needs-more-than-just-guardrails) details how it can be used to bypass guardrails. Most furadrails are models and thus they are prone to GCG attacks. We have seen it being used agaist prompt guards by Meta and mant those. 
+Jojwa the winner of multiple track in hackaprompt, has attacjly provided the [source code](https://github.com/jyapayne/bypass-prompt-guard-2) for this and checks for prefix and suffix attacks. 
 
 
+A [paper](https://repello.ai/blog/breaking-metas-prompt-guard-why-your-ai-needs-more-than-just-guardrails) from Repello demonstrates how adversarial techniques can bypass model-based guardrails. Since most guardrails are models themselves, they are inherently vulnerable to GCG-style attacks. This has been observed in the case of Meta’s Prompt Guard and other similar systems. Notably, **Jojwa**, a multiple-track winner in HackAPrompt, released the [source code](https://github.com/jyapayne/bypass-prompt-guard-2) used to attack these models, which includes checks for both prefix and suffix adversarial strategies.
+
+## Summary 
+
+| Category                  | How It Works                                   | Key Strengths                                    |
+| ------------------------- | ---------------------------------------------- | ------------------------------------------------ |
+| **White-Box**             | Uses token gradients to tune suffix directly   | High precision and optimized for specific models |
+| **Black-Box (Transfer)**  | Reuses proven suffixes across models           | Convenient and effective across unknown systems  |
+| **Black-Box (Automated)** | LLMs or algorithms generate & refine suffixes  | Not widley used due to cost and time inefficniy       |
+| **Real-World Impact**     | Bypassing existing safety mechanisms           | A serious threat to model alignment and trust    |
+
+
+> This is just a simple overview there is more research to be added.

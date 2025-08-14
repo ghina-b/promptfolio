@@ -2,30 +2,29 @@
 title: Promptfolio
 hide:
   - toc
+pin: true  
 ---
 
-# 👋 Hi, I’m Ghina
+# Hi, I’m Ghina
 
-Security-minded AI researcher focusing on **alignment, red teaming, and jailbreak analysis**. This site hosts short write-ups, experiments, and notes.
+Security-focused AI researcher specializing in **alignment, red teaming, and jailbreak analysis**. This site features concise write-ups, experiments, and research notes.
 
-## Quick links
+## Quick Links
 
-[:material-notebook-outline: Blog](blog/index.md) • [:material-tag-multiple: Tags](../tags.md) • [:material-account: About](about.md)
+[Blog](blog/index.md) • [Tags](../tags.md) • [About](about.md)
 
-## Featured work
+## Featured Work
 
 ::: cards
-- :material-shield-lock: **Defense-Aware Prompting **
-  + A practical recipe for stress-testing model guardrails with structured probes.
-  + [Read overview](blog/posts/2025-08-14-dap-starter-kit.md)
 
-- :material-flask-outline: **Jailbreak Strategy Map**
-  + Taxonomy + examples comparing strategy transfer across models.
-  + *Post coming soon*
+- **Jailbreak Strategy Map**  
+  Taxonomy and examples illustrating strategy transfer across models.  
+  *Post coming soon*
+
 :::
 
-## What to expect
+## What to Expect
 
-- Concise posts with runnable snippets  
-- Real attack+defense tradeoffs  
-- Transparent failures and lessons
+- Concise posts with runnable code snippets  
+- Realistic attack–defense trade-offs  
+- Transparent discussions of failures and lessons learned
