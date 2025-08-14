@@ -9,7 +9,7 @@ summary: What this blog covers and how posts are organized.
 
 Welcome! This blog documents **hands-on experiments** in AI alignment, red-teaming, and jailbreak analysis. Posts are deliberately short and scoped: a single idea, a concrete example, and a takeaway.
 
-
+<!-- more -->
 ## Blog 
 
 - HackAPrompt Discussion 
