@@ -40,6 +40,9 @@ theme:
     - search.suggest 
     - search.highlight
     - search.share
+    - content.code.copy
+    - content.code.select
+  
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -52,6 +55,13 @@ plugins:
 
 markdown_extensions: 
   - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Home: index.md
   # - Tags: tags.md
