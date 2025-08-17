@@ -2,6 +2,7 @@ site_name: Promptfolio
 site_url: https://ghina-b.github.io/promptfolio/
 theme:
   name: material
+  custom_dir: overrides
   palette: 
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -40,6 +41,8 @@ theme:
     - search.highlight
     - search.share
 
+extra_css:
+  - assets/stylesheets/extra.css
 
 plugins:
   - search 
@@ -47,12 +50,13 @@ plugins:
       tags_file: tags.md
   - blog
 
-markdown_extensions:
+markdown_extensions: 
   - footnotes
 nav:
   - Home: index.md
-  - About: about.md
-  - Tags: tags.md
+  # - Tags: tags.md
   - Blog: blog/index.md
+  - Resources: resources.md
+
 
 
