@@ -1,8 +1,7 @@
 ---
 title: "Jailbreaking Models != Jailbreaking Agents"
-
 date: 2025-09-17
-category:0
+category: 
  - "Notes"
 tags: 
   - "Agents"
