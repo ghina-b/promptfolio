@@ -8,6 +8,7 @@
 - [ASCII Smuggler](https://embracethered.com/blog/ascii-smuggler.html)
 - [Emoji Encoder](https://gist.github.com/jyapayne/f1bb40f097c4262ba5c9c9f57c53424c)
 - [Vulnerable Bot](https://github.com/M507/HackMeGPT)
+- [JSON Escape](https://www.freeformatter.com/json-escape.html)
 
 ## Writeups
 - [Prompt Hacking CBRNE](https://jacoporepossi.github.io/learningq/posts/2025-06-22-prompt-hacking-cbrne/)
