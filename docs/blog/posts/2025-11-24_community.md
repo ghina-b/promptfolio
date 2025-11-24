@@ -12,7 +12,7 @@ readtime: 10
 
 This post goes over the difference between jailbreaking models and jailbreaking agents, everything I learned and contiune to learn from the community. 
 
-<!--more-->
+<!-- more -->
 
 
 Jailbreaking language models has long relied on roleplay strategies, shaping the model into a character, guiding its beliefs, and gradually steering it toward unsafe or hidden behaviors. But when it comes to **agents**, the landscape changes. Agent jailbreaks depend heavily on the system’s structure, its tools, and the autonomy it’s given. Look at competitions like HackAPrompt, Gray Swan, or Lakera challenges and you’ll see how dynamic the strategies become.
