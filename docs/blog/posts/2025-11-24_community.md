@@ -5,9 +5,7 @@ date: 2025-09-17
 category:0
  - "Notes"
 tags: 
-  - "Community Notes"
   - "Agents"
-  - "Chatgpt 5"
 
 readtime: 10
 ---
