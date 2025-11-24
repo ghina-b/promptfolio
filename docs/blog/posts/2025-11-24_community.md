@@ -1,5 +1,5 @@
 ---
-title: "Jailbreaking Models != Jailbreaking Agents"
+title: "Jailbreaking LLMs != Jailbreaking Agents"
 date: 2025-09-17
 category: 
  - "Notes"
@@ -8,7 +8,7 @@ tags:
 
 readtime: 10
 ---
-# Jailbreaking Models != Jailbreaking Agents
+# Jailbreaking LLMs != Jailbreaking Agents
 
 This post goes over the difference between jailbreaking models and jailbreaking agents, everything I learned and contiune to learn from the community. 
 
